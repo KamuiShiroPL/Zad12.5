@@ -3,7 +3,7 @@ var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&fi
 var prefix = "https://cors-anywhere.herokuapp.com/";
 
 
-
+$.ajaxSetup({ cache: false });
 
 function getQuote() {
     $.getJSON(prefix + quoteUrl, createTweet);
